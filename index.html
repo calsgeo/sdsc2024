@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Smart Data Smart Cities | 8th Smart Data Smart Cities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header-image {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .icon img {
+            max-height: 100px;
+        }
+        .icon-text {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .tabs {
+            display: flex;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            color: #1a3956;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            /* text-align: center; */
+            display: flex;
+            height: 100%;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+        }
+        .tab-content {
+            display: flex;
+            align-items: center;
+        }
+        .tab-image {
+            flex: 1;
+            max-width: 15%;
+        }
+        .tab-text {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+        .collapsible {
+            display: none;
+        }
+        .collapsible-section {
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+        }
+        .collapsible-button {
+            background-color: #1a3956;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .collapsible-content {
+            background-color: #1a395613;
+            display: none;
+            padding: 10px;
+            overflow: hidden;
+            text-align: left;
+            padding: 10px;
+        }
+        .two-column-text {
+            column-count: 2;
+            column-gap: 20px;
+            padding: 10px;
+        }
+        .two-column-text p {
+            display: inline-block;
+            padding: 10px;
+        }
+        .bordered-div {
+            border: 2px solid #000;
+            padding: 1px;
+        }
+        .tobeupdated{
+            color: #8e8e8e;
+        }
+        .btn {
+            background-color: #1a3956;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-image">
+        <a href="https://www.uniwa.gr/" style="height: 85px; visibility: visible;">
+            <img src="images/Logo-for-use-in-white-background.png" alt="Header Image" style="max-height: 100px;">
+        </a>
+    </div>
+    <div class="tabs">
+        <div class="tab" onclick="openTab(0)">Home Page</div>
+        <div class="tab" onclick="openTab(1)">Keynotes</div>
+        <div class="tab" onclick="openTab(2)">Program</div>
+        <div class="tab" onclick="openTab(3)">Papers</div>
+        <div class="tab" onclick="openTab(4)">Committees</div>
+        <div class="tab" onclick="openTab(5)">Contact us</div>
+    </div>
+    <div class="content" id="content-1">
+        <div class="icon-section">
+            <div class="icon">
+                <img src="images/calendar.png" alt="Icon 1">
+                <div class="icon-text">4 - 8 June 2024</div>
+            </div>
+            <div class="icon">
+                <img src="images/time.png" alt="Icon 2">
+                <div class="icon-text">09:00am - 05:00pm</div>
+            </div>
+            <div class="icon">
+                <img src="images/location.png" alt="Icon 3">
+                <div class="icon-text">University of West Attica Athens Greece</div>
+            </div>
+        </div>
+        <h1>Overview</h1>
+        <div><p>Data and data science play key role in informed decision-making for various businesses. 3D location data and 3D data analysis add more advantages for identification of problems, patterns and trends by location and time to make smarter decisions for our cities. Smart cities get benefits from data, data science, location data and analytics to provide accurate information for better decision making at local and regional scale. Sensing technologies and real time data collectors are also great tools for collecting different dimensions of data. In a smart cities era, all these data and information require appropriate collaborative and communication technologies for better management and sharing of data and information.</p>
+        <p>The Smart Data and Smart Cities (SDSC) Conference is an annual international conference that brings together international experts in city analytics, GIS, digital twins, smart cities and data science from leading research institutes to discuss advances in methods and applications. It provides a forum to discuss the use data and technology to plan and shape our future cities. SDSC is the annual conference of the Urban Data Management Society, a society over 40 years old.</p>
+        <p> <b>This year the 8th annual SDSC conference will be held in Athens, Greece 04-08 June, 2024.</b> This is the first time SDSC conference has come to Greece. </p>
+        <p>This event seeks to invite cutting edge research, experience, and implementation relevant to city and infrastructure data, analytics, collaborative environments, and platforms for smarter decision making at local, national, and international levels. We encourage scholars and practitioners to share their research and experience relevant to the themes of the conference:</p></div>
+        
+        <div class="collapsible-section" id="collapsible-Themes">
+            <button class="collapsible-button" onclick="toggleCollapsible('collapsible-Themes')">View list of themes</button>
+            <div class="collapsible-content" id="collapsible-content">
+                <div class="two-column-text">
+                    <div>
+                        - GIS, urban informatics, and smart cities<br>
+                        - Sensing technologies, laser scanning and smart cities<br>
+                        - BIM and infrastructure<br>
+                        - Data science, visualisation and City Analytics<br>
+                        - Mobility data and visualisation<br>
+                        - Participation and empowerment<br>
+                        - Privacy, data security challenges in digital twins and smart cities<br>
+                        - Blockchain technology for municipal management<br>
+                        - Open data and open urban platforms<br>
+                        - Crowdsourcing data collection and analytics<br>
+                        - Monitoring systems<br>
+                        - Disaster management/warning systems<br>
+                        - Application of Artificial Intelligence (AI) and machine learning in smart cities<br>
+                        - Drones for monitoring/inspecting cities and construction sites<br>
+                    </div>
+                    <div>
+                        - Smart homes<br>
+                        - Realtime/web-based/interactive data visualization<br>
+                        - Cities' dashboards<br>
+                        - Smart Energy efficiency solutions<br>
+                        - Data and analytics for circular economy in cities<br>
+                        - BIM/GIS integration and digital twins<br>
+                        - Manned Drones<br>
+                        - Manned Drones Transportation<br>
+                        - Spatio-temporal patterns<br>
+                        - Smart cities during and after Covid-19<br>
+                        - Big data/big spatial data analysis and management<br>
+                        - ICT and smart cities<br>
+                        - Smart Transportation<br>
+                        - Net zero-emission cities<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bordered-div">
+            <center><h3>Conference fees</h3></center>
+            <div class="two-column-text">
+                <div align="right">
+                    Academic registration:<br>
+                    Non-Academic registration:<br>
+                    Student registration:<br>
+                    Online registration:<br>
+                    Student online registration:<br>
+                    One day registration:<br>
+                    Full day workshop registration:<br>
+                </div>
+                <div align="left">
+                    €<br>
+                    €<br>
+                    €<br>
+                    €<br>
+                    €<br>
+                    €<br>
+                    €<br>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-section" id="collapsible-Inscription">
+            <button class="collapsible-button" onclick="toggleCollapsible('collapsible-Inscription')">Inscription</button>
+            <div class="collapsible-content" id="collapsible-content">
+                <b>Academic and non-academic packages include:</b><br>
+                <ul>
+                    <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, afternoon tea and lunch</li>
+                    <li>Welcome reception drinks, 5th June 2024</li>
+                    <li>Gala dinner, 6th June 2024</li>
+                </ul>
+                <b>Student registration includes:</b><br>
+                <ul>
+                    <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, afternoon tea and lunch</li>
+                    <li>Catering for morning tea, afternoon tea and lunch</li>
+                </ul>    
+                <b>Online registration includes:</b><br>
+                <ul>
+                    <li>Live access to keynotes</li>
+                    <li>Access to presentations and parallel sessions</li>
+                    <li>Access to conference program</li>
+                </ul>            
+            </div>
+
+        </div>
+        
+        <center><h2>Dear colleagues, Ladies and Gentlemen,</h2></center>
+        <div class="tab-content">
+            <div class="tab-image">
+                <img src="https://sdsc.uniwa.gr/wp-content/uploads/sites/677/2022/10/tsatsaris-1.jpg" alt="Image Alt Text" style="width: 100%">
+            </div>
+            <div class="tab-text">
+                <p>I hope that I will have the pleasure to welcome one year from now to the 8th Smart Data Smart Cities conference that will be held in Athens Greece, and will be hosted at the University of Western Attica, a University that is constantly rising in the international rankings.</p>
+                <p>The emblem of our university is the ancient Athenian philosopher Plato, a student of Socrates, a teacher of Aristotle, and the founder of the Academy of the same name. In fact, the archaeological site of Plato’s Academy, also considered the first known ancient university to focus on philosophy, mathematics, science, and politics, is within walking distance of our campuses.</p>
+                <p>We are delighted to host this International Conference supported by our Department, Surveying and Geoinformatics Engineering, which incorporates a range of scientific fields within its curriculum, including measurement and collection, processing, visualization, management, analysis, and dissemination of geometric, as well as quantitative and qualitative information about the natural and man-made environment, with research procedures and methods, which are part of an innovative technological framework that considers the geographical space and the natural and man-made environment as a result of constant and perpetual interaction of nature and man.</p>
+                <p>We are ready to provide a forum for the esteemed guests to discuss new approaches and methodologies, examine new technologies applied in smart cities, and share practical experiences in smart data and smart cities.</p>
+                <p>Combining its contribution to the development of Western scientific thought since ancient times with the famous Greek hospitality, Athens aspires to be added to the list of cities that have already successfully organized this renowned conference.</p>
+                <p>Dear future participants, at the 8th Smart Data Smart Cities Conference, hoping to see you all in Athens in September 2023, I wish you a big welcome to a pleasant and multicultural temple of science, art, and technology.</p>
+                <p>We are at your disposal for a successful conference!</p>
+            </div>
+        </div>
+        <center><h2>The Head of the Department of Surveying & Geoinformatics Engineering</h2></center>
+        <h3>
+            <center>Andreas Tsatsaris, PhD</center>
+            <center>Professor</center>
+        </h3>
+        <center><img src="images/SKETCH_footer_skyline-1.png" alt="Skyline at bottom" style="width: 100%;"></center>
+    </div>
+    <div class="content" id="content-2">
+        <h1>Keynotes</h1>
+        <center>
+            <img src="images/under-construction.jpg" alt="Under construction" style="max-width: 100%;">
+        </center>
+        <h2>Name</h2>
+        <div class="tab-content">
+            <div class="tab-image">
+                <img src="images/under-construction.jpg" alt="Speaker Picture" style="width: 100%">
+            </div>
+            <div class="tab-text">
+                Bio
+            </div>
+        </div>
+        
+    </div>
+    <div class="content" id="content-3">
+        <h1>Program</h1>
+        <div class="tobeupdated">
+            <h2>*Schedule subject to change</h2>
+        </div>
+        <h2>4<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-text">
+                <div align="left">
+                    Registration<br>
+                    <h3>PhD Candidate and Research student Symposium</h3>
+                </div>
+                <div align="left">
+                    09:00am - 09:30am<br>
+                </div>
+            </div>
+        </div>
+        <h2>5<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-text">
+                <div align="left">
+                    Registration<br>
+                    Opening ceremony<br>
+                    <h3>Workshops / 1<sup>st</sup> day of the symposium</h3>
+                </div>
+                <div align="left">
+                    09:00am - 09:30am<br>
+                    09:30am - 10:00am<br>
+                    <h3>To be announced</h3>
+                </div>
+            </div>
+        </div>
+        <h2>6<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-text">
+                <div align="left">
+                    Registration<br>
+                    <h3>2<sup>nd</sup> day of the symposium</h3>
+                    <h3>Gala</h3>
+                </div>
+                <div align="left">
+                    09:00am - 09:30am<br>
+                    <h3>To be announced</h3>
+                    <h3>To be announced</h3>
+                </div>
+            </div>
+        </div>
+        <h2>7<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-text">
+                <div align="left">
+                    Registration<br>
+                    <h3>3<sup>rd</sup> day of the symposium</h3>
+                </div>
+                <div align="left">
+                    09:00am - 09:30am<br>
+                    <h3>To be announced</h3>
+                </div>
+            </div>
+        </div>
+        <h2>8<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-text">
+                <div align="left">
+                    <h3>Smart excursion in smart places</h3>
+                </div>
+                <div align="left">
+                    <h3>To be announced</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="content" id="content-4">
+        <h1>Call for papers</h1>
+        <div class="two-column-text">
+            <div align="left">
+                <h2>Key Deadlines</h2>
+                <h3>Publication Pathway 1 – Abstract paper submission</h3>
+                <h4>6-8 pages</h4>
+                Extended abstract (1000w) due: <u>15th January 2024</u><br>
+                Pathway – short paper submission<br>
+                *paper to be accepted on abstract review<br>
+                *to be published in ISPRS archives<br>
+                <h3>Publication pathway 2 – Full paper submission</h3>
+                <h4>6-8 pages</h4>
+                Full paper due: <u>15th February 2024</u><br>
+                *paper to be accepted on full paper review<br>
+                *no abstract submission required in advance<br>
+                *to be published in ISPRS annals<br>
+                Author notification (full paper): <u>10th March 2024</u><br>
+            </div>
+            <div align="left">
+                <h2>Adwards</h2>
+                This joining event will recognise the high quality presentations and papers by sponsoring the following awards:
+                <ul>
+                    <li>Best paper award</li>
+                    <li>Best oral presentation</li>
+                    <li>Best young researcher award</li>
+                    <li>Several industry supported awards</li>
+                </ul>
+        
+                <h2>How to submit</h2>
+                Papers are submitted via Conftool. <br>
+                <br>
+                <button class="btn" onclick="window.location.href='';">
+                    <i class="fa fa-save"></i> Access conftool here
+                </button><br>
+                <br>
+                Paper must be prepared following strictly the ISPRS template for abstract and full paper: <br>
+                <br>
+                <button class="btn" onclick="window.location.href='https://www.isprs.org/documents/orangebook/app5.aspx';">
+                    <i class="fa fa-wpforms"></i> Access template here
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="content" id="content-5">
+        <h2>Committees</h2>
+        <center>
+            <img src="images/under-construction.jpg" alt="Under construction" style="max-width: 100%;">
+        </center>
+    </div>
+    <div class="content" id="content-6">
+        <h1>Ag. Spyridonos Str., Egaleo</h1>
+        Postal Code 12243, Athens<br>
+        <p>Email:<a href="mailto:dnpantazis@uniwa.gr">dnpantazis@uniwa.gr</a></p>
+        <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.3008578284302!2d23.673890221378407!3d38.0030338218503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcace8cb49fb%3A0xd565e562863223b3!2sAthens+University+of+Applied+Sciences!5e0!3m2!1sen!2sgr!4v1520984304414"
+            ></iframe>
+    </div>
+
+    <script>
+        function openTab(tabNumber) {
+            const contentElements = document.querySelectorAll('.content');
+            const tabElements = document.querySelectorAll('.tab');
+
+            for (let i = 0; i < contentElements.length; i++) {
+                contentElements[i].style.display = 'none';
+                tabElements[i].style.backgroundColor = '#f0f0f0';
+            }
+
+            contentElements[tabNumber].style.display = 'block';
+            tabElements[tabNumber].style.backgroundColor = '#fff';
+        }
+
+        function toggleCollapsible(collapsibleId) {
+            const collapsibleContent = document.getElementById(collapsibleId).getElementsByClassName('collapsible-content')[0];
+            if (collapsibleContent.style.display === 'block') {
+                collapsibleContent.style.display = 'none';
+                collapsibleContent.style.maxHeight = '0';
+            } else {
+                collapsibleContent.style.display = 'block';
+                collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
+            }
+        }
+
+        // Set the first tab (Tab 1) to be open by default on page load
+        openTab(0);
+        // // Open the collapsible content by default
+        toggleCollapsible('collapsible-Themes');
+        toggleCollapsible('collapsible-Inscription');
+    </script>
+</body>
+</html>
