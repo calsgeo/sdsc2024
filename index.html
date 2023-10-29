@@ -31,6 +31,7 @@
         }
         .tabs {
             display: flex;
+            flex-wrap: wrap;
         }
         .tab {
             flex: 1;
@@ -57,6 +58,7 @@
             align-items: center;
         }
         .tab-image {
+            float: left;
             flex: 1;
             max-width: 15%;
         }
@@ -79,6 +81,7 @@
             padding: 10px;
             cursor: pointer;
             width: 100%;
+            font-size: large;
         }
         .collapsible-content {
             background-color: #1a395613;
@@ -114,6 +117,11 @@
         }
         .btn:hover {
             background-color: RoyalBlue;
+        }
+        .item-div {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -192,16 +200,16 @@
             </div>
         </div>
         <div class="bordered-div">
-            <center><h3>Conference fees</h3></center>
+            <center><h3>Conference registration fees</h3></center>
             <div class="two-column-text">
                 <div align="right">
-                    Academic registration:<br>
-                    Non-Academic registration:<br>
-                    Student registration:<br>
-                    Online registration:<br>
-                    Student online registration:<br>
-                    One day registration:<br>
-                    Full day workshop registration:<br>
+                    Academic:<br>
+                    Non-Academic:<br>
+                    Student:<br>
+                    Online:<br>
+                    Student online:<br>
+                    One day:<br>
+                    Full day workshop:<br>
                 </div>
                 <div align="left">
                     €<br>
@@ -239,19 +247,17 @@
         </div>
         
         <center><h2>Dear colleagues, Ladies and Gentlemen,</h2></center>
-        <div class="tab-content">
-            <div class="tab-image">
-                <img src="https://sdsc.uniwa.gr/wp-content/uploads/sites/677/2022/10/tsatsaris-1.jpg" alt="Image Alt Text" style="width: 100%">
+        <div class="square">
+            <div>
+                <img src="https://sdsc.uniwa.gr/wp-content/uploads/sites/677/2022/10/tsatsaris-1.jpg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 50%">
             </div>
-            <div class="tab-text">
-                <p>I hope that I will have the pleasure to welcome one year from now to the 8th Smart Data Smart Cities conference that will be held in Athens Greece, and will be hosted at the University of Western Attica, a University that is constantly rising in the international rankings.</p>
-                <p>The emblem of our university is the ancient Athenian philosopher Plato, a student of Socrates, a teacher of Aristotle, and the founder of the Academy of the same name. In fact, the archaeological site of Plato’s Academy, also considered the first known ancient university to focus on philosophy, mathematics, science, and politics, is within walking distance of our campuses.</p>
-                <p>We are delighted to host this International Conference supported by our Department, Surveying and Geoinformatics Engineering, which incorporates a range of scientific fields within its curriculum, including measurement and collection, processing, visualization, management, analysis, and dissemination of geometric, as well as quantitative and qualitative information about the natural and man-made environment, with research procedures and methods, which are part of an innovative technological framework that considers the geographical space and the natural and man-made environment as a result of constant and perpetual interaction of nature and man.</p>
-                <p>We are ready to provide a forum for the esteemed guests to discuss new approaches and methodologies, examine new technologies applied in smart cities, and share practical experiences in smart data and smart cities.</p>
-                <p>Combining its contribution to the development of Western scientific thought since ancient times with the famous Greek hospitality, Athens aspires to be added to the list of cities that have already successfully organized this renowned conference.</p>
-                <p>Dear future participants, at the 8th Smart Data Smart Cities Conference, hoping to see you all in Athens in September 2023, I wish you a big welcome to a pleasant and multicultural temple of science, art, and technology.</p>
-                <p>We are at your disposal for a successful conference!</p>
-            </div>
+            <p>I hope that I will have the pleasure to welcome one year from now to the 8th Smart Data Smart Cities conference that will be held in Athens Greece, and will be hosted at the University of Western Attica, a University that is constantly rising in the international rankings.</p>
+            <p>The emblem of our university is the ancient Athenian philosopher Plato, a student of Socrates, a teacher of Aristotle, and the founder of the Academy of the same name. In fact, the archaeological site of Plato’s Academy, also considered the first known ancient university to focus on philosophy, mathematics, science, and politics, is within walking distance of our campuses.</p>
+            <p>We are delighted to host this International Conference supported by our Department, Surveying and Geoinformatics Engineering, which incorporates a range of scientific fields within its curriculum, including measurement and collection, processing, visualization, management, analysis, and dissemination of geometric, as well as quantitative and qualitative information about the natural and man-made environment, with research procedures and methods, which are part of an innovative technological framework that considers the geographical space and the natural and man-made environment as a result of constant and perpetual interaction of nature and man.</p>
+            <p>We are ready to provide a forum for the esteemed guests to discuss new approaches and methodologies, examine new technologies applied in smart cities, and share practical experiences in smart data and smart cities.</p>
+            <p>Combining its contribution to the development of Western scientific thought since ancient times with the famous Greek hospitality, Athens aspires to be added to the list of cities that have already successfully organized this renowned conference.</p>
+            <p>Dear future participants, at the 8th Smart Data Smart Cities Conference, hoping to see you all in Athens in September 2023, I wish you a big welcome to a pleasant and multicultural temple of science, art, and technology.</p>
+            <p>We are at your disposal for a successful conference!</p>
         </div>
         <center><h2>The Head of the Department of Surveying & Geoinformatics Engineering</h2></center>
         <h3>
@@ -265,14 +271,12 @@
         <center>
             <img src="images/under-construction.jpg" alt="Under construction" style="max-width: 100%;">
         </center>
-        <h2>Name</h2>
-        <div class="tab-content">
-            <div class="tab-image">
-                <img src="images/under-construction.jpg" alt="Speaker Picture" style="width: 100%">
+        <h2>Speaker name</h2>
+        <div class="square">
+            <div>
+                <img src="images/under-construction.jpg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 50%">
             </div>
-            <div class="tab-text">
-                Bio
-            </div>
+            <p>Metus facilisis fames fusce odio dolor praesent facilisis tempor iaculis velit dictumst? Viverra ornare velit mauris facilisi congue. Cras viverra habitasse ipsum fames eros lectus amet suscipit suspendisse. Cubilia per, neque ullamcorper cum platea venenatis libero ac cubilia aenean. Laoreet morbi sit placerat at aenean metus viverra cubilia. Cubilia cras vitae felis fringilla luctus ut. Ultrices placerat urna enim ornare nunc. Dignissim neque non nisl fermentum dapibus ornare ac iaculis ullamcorper penatibus felis. Nascetur id mattis iaculis.</p>
         </div>
         
     </div>
@@ -442,7 +446,7 @@
 
         // Set the first tab (Tab 1) to be open by default on page load
         openTab(0);
-        // // Open the collapsible content by default
+        // Open the collapsible content by default
         toggleCollapsible('collapsible-Themes');
         toggleCollapsible('collapsible-Inscription');
     </script>
