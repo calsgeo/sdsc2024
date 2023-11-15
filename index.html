@@ -123,6 +123,36 @@
             padding: 10px;
             margin: 10px;
         }
+        .table-container {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd; /* Light gray background for cell titles */
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        /* Define the background colors */
+         .platinum {
+            background-color: #E5E4E2;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .silver {
+            background-color: silver;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +167,8 @@
         <div class="tab" onclick="openTab(2)">Program</div>
         <div class="tab" onclick="openTab(3)">Papers</div>
         <div class="tab" onclick="openTab(4)">Committees</div>
-        <div class="tab" onclick="openTab(5)">Contact us</div>
+        <div class="tab" onclick="openTab(5)">Sponsors</div>
+        <div class="tab" onclick="openTab(6)">Contact us</div>
     </div>
     <div class="content" id="content-1">
         <div class="icon-section">
@@ -201,7 +232,15 @@
         </div>
         <div class="bordered-div">
             <center><h3>Conference registration fees</h3></center>
-            <div class="two-column-text">
+            <div>
+                <center><strong>Early bird registration:</strong> until April 15th 2024</center>
+                <center>500€</center>
+            </div>
+            <div>
+                <center>From April 15th 2024</center>
+                <center>600€</center>
+            </div>
+            <!-- <div class="two-column-text">
                 <div align="right">
                     Academic:<br>
                     Non-Academic:<br>
@@ -220,18 +259,19 @@
                     €<br>
                     €<br>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="collapsible-section" id="collapsible-Inscription">
             <button class="collapsible-button" onclick="toggleCollapsible('collapsible-Inscription')">Inscription</button>
             <div class="collapsible-content" id="collapsible-content">
-                <b>Academic and non-academic packages include:</b><br>
+                <b>Registration includes:</b><br>
                 <ul>
+                    <li>Access to workshops</li>
                     <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, afternoon tea and lunch</li>
                     <li>Welcome reception drinks, 5th June 2024</li>
                     <li>Gala dinner, 6th June 2024</li>
                 </ul>
-                <b>Student registration includes:</b><br>
+                <!-- <b>Student registration includes:</b><br>
                 <ul>
                     <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, afternoon tea and lunch</li>
                     <li>Catering for morning tea, afternoon tea and lunch</li>
@@ -241,7 +281,7 @@
                     <li>Live access to keynotes</li>
                     <li>Access to presentations and parallel sessions</li>
                     <li>Access to conference program</li>
-                </ul>            
+                </ul>             -->
             </div>
 
         </div>
@@ -249,7 +289,7 @@
         <center><h2>Dear colleagues, Ladies and Gentlemen,</h2></center>
         <div class="square">
             <div>
-                <img src="https://sdsc.uniwa.gr/wp-content/uploads/sites/677/2022/10/tsatsaris-1.jpg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 50%">
+                <img src="https://geo.uniwa.gr/wp-content/uploads/sites/31/2018/10/Tsatsaris-e1634217776788.png" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 30%">
             </div>
             <p>I hope that I will have the pleasure to welcome one year from now to the 8th Smart Data Smart Cities conference that will be held in Athens Greece, and will be hosted at the University of Western Attica, a University that is constantly rising in the international rankings.</p>
             <p>The emblem of our university is the ancient Athenian philosopher Plato, a student of Socrates, a teacher of Aristotle, and the founder of the Academy of the same name. In fact, the archaeological site of Plato’s Academy, also considered the first known ancient university to focus on philosophy, mathematics, science, and politics, is within walking distance of our campuses.</p>
@@ -355,22 +395,172 @@
     </div>
     <div class="content" id="content-4">
         <h1>Call for papers</h1>
+        <p>The world has experienced tremendous challenges and undergone significant socio-technological transitions in recent years. This in turn has made data-driven technologies such as distributed systems, data analytics and digital platforms increasingly relevant to both the private and public sector, as well as researchers. These emerging digital paradigms - such as Artificial Intelligence (AI) and Machine Learning (ML), Big Data and Digital Twin applications - are particularly critical to the management of Smart Cities.</p>
+        <p>A Smart City is defined as a set of instruments across many scales that are connected through multiple networks and provide continuous data regarding people and environment in support of decisions about the physical and social form of the city. This process cannot be completed without technology advancements. Moreover a Smart City cannot be established without involving citizens (smart people).</p>
+        <p>The 8th International Smart Data and Smart Cities (SDSC) Conference will be organised in Athens, Greece, from the 4th to the 7th June 2024. SDSC is a leading international conference focussed on the dissemination and exchange of knowledge and research results relating to urban innovation and smart technologies across the EU, North and South America and Australasia. It is initiated by the Urban Data Management Society (UDMS). With each conference, we strengthen the communication between senior researchers, students, developers, practitioners and citizens and establish collaborations on new research topics.</p>
+        <p>The conference is organised under the auspices of the International Society of Photogrammetry and Remote sensing (ISPRS) and will comprise technical and scientific presentations along with a series of pre-conference workshops. We seek original contributions on all aspects of the following themes and related topics:<br></p>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Theme 1: Smart Data</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Sensor network databases</li>
+                            <li>On-the-fly data mining</li>
+                            <li>Geographic and urban knowledge modelling and engine</li>
+                            <li>Urban data analytics and big data</li>
+                            <li>Big databases and data management (noSQL)</li>
+                            <li>Open urban platforms</li>
+                            <li>Cyber-Security</li>
+                            <li>Privacy and urban resilience</li>
+                            <li>Data privacy and integrity</li>
+                            <li>Future Internet 5G/6G</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 2: Smart People</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Volunteered information</li>
+                            <li>Citizen engagement</li>
+                            <li>Participation and empowerment</li>
+                            <li>Privacy and data security challenges in smart cities</li>
+                            <li>Usability of Smart Systems</li>
+                            <li>Co-Design</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 3: Smart Cities</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Urban Digital Twins</li>
+                            <li>3D modelling of cities</li>
+                            <li>Internet of Things</li>
+                            <li>Urban social networks</li>
+                            <li>Monitoring systems</li>
+                            <li>Smart Homes</li>
+                            <li>Smart Energy</li>
+                            <li>Urban knowledge engineering</li>
+                            <li>New style of urban decision-making systems</li>
+                            <li>Disaster management systems</li>
+                            <li>Industry 4.0</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 4: Smart Digital Planning Tools</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Metaverse</li>
+                            <li>Scenario planning</li>
+                            <li>Urban modelling and simulation</li>
+                            <li>Urban AI and ML</li>
+                            <li>Urban computational design</li>
+                            <li>Digital platforms and portals</li>
+                            <li>SaaS (Service as a Software) Artificial Intelligence</li>
+                            <li>Plantech & Proptech</li>
+                            <li>Visualisation</li>
+                            <li>Dashboards</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 5: Smart Governance</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Smart city policy</li>
+                            <li>Smart urban governance</li>
+                            <li>Rules as code</li>
+                            <li>Standards and regulations</li>
+                            <li>Smart engagement - Co-design, co-production</li>
+                            <li>Living labs methods and case studies</li>
+                            <li>Participatory geographical information systems</li>
+                            <li>People as sensors</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 6: Smart Green</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Net-zero emission cities</li>
+                            <li>COP26 Goals</li>
+                            <li>Sustainable and Green Computing</li>
+                            <li>Environment-friendly system</li>
+                            <li>Green computing</li>
+                            <li>Ecosystems</li>
+                            <li>Green buildings</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme 7: Smart Construction</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Smart construction equipment & machinery</li>
+                            <li>Automated building systems</li>
+                            <li>Construction site planning, monitoring and control</li>
+                            <li>Smart building solutions</li>
+                            <li>Digital technologies used in health and safety management</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme  8: Smart Urban Mobility</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Smart Aerial Mobility</li>
+                            <li>Smart Transportation</li>
+                            <li>Intelligent Transport Systems</li>
+                            <li>Electric Vertical Take-Off and Landing aircrafts (eVTOL)</li>
+                            <li>Voloports</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="two-column-text">
             <div align="left">
                 <h2>Key Deadlines</h2>
                 <h3>Publication Pathway 1 – Abstract paper submission</h3>
                 <h4>6-8 pages</h4>
-                Extended abstract (1000w) due: <u>15th January 2024</u><br>
-                Pathway – short paper submission<br>
-                *paper to be accepted on abstract review<br>
-                *to be published in ISPRS archives<br>
+                Extended abstract (1000w) due: <u>12th January 2024</u><br>
+                Author notification: <u>9th February 2024</u><br>
+                Optional final submission: <u>12th April 2024</u><br>
+                <ul>
+                    <li>6-8 pages</li>
+                    <li>Submission for ISPRS archives</li>
+                    <li>Will not be re-reviewed</li>
+                </ul>
+
                 <h3>Publication pathway 2 – Full paper submission</h3>
                 <h4>6-8 pages</h4>
-                Full paper due: <u>15th February 2024</u><br>
-                *paper to be accepted on full paper review<br>
-                *no abstract submission required in advance<br>
-                *to be published in ISPRS annals<br>
-                Author notification (full paper): <u>10th March 2024</u><br>
+                Full paper: <u>26th January 2024</u><br>
+                Author notification: <u>1st March 2024</u><br>
+                Final submission: <u>12th April 2024</u><br>
+                <ul>
+                    <li>6-8 pages</li>
+                    <li>Paper will be blind peer reviewed for ISPRS Annals</li>
+                    <li>No abstract submission required</li>
+                </ul>
             </div>
             <div align="left">
                 <h2>Adwards</h2>
@@ -381,12 +571,12 @@
                     <li>Best young researcher award</li>
                     <li>Several industry supported awards</li>
                 </ul>
-        
+                
                 <h2>How to submit</h2>
-                Papers are submitted via Conftool. <br>
+                Papers are submitted via Easychair. <br>
                 <br>
                 <button class="btn" onclick="window.location.href='';">
-                    <i class="fa fa-save"></i> Access conftool here
+                    <i class="fa fa-save"></i> Access Easychair here
                 </button><br>
                 <br>
                 Paper must be prepared following strictly the ISPRS template for abstract and full paper: <br>
@@ -396,7 +586,22 @@
                 </button>
             </div>
         </div>
-        
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Instructions for Authors</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Extended Abstract:</strong> there is no template for the 1000 word paper.  Accepted 1000 word abstracts  have the option to submit a full paper, which will be published in the ISPRS archives without re-review. Papers for the Archives are limited to 8 pages</p>
+                        <p><strong>Full paper:</strong> accepted full papers will be published in the ISPRS Annals. These submissions are limited to 8 pages. All full paper submissions will be refereed in a double-blind peer review process for quality, originality, and relevance by the scientific committee.  Papers not accepted for ISPRS Annals might be considered for the ISPRS Archives.</p>
+                        <p>
+                        ** Note that full papers submitted for double-blind peer review to the ISPRS Annals must not contain any information which makes it possible to identify the authors. In particular, names and affiliations must be removed from the manuscript submitted for review. If you would like your paper to be considered for the Annals, please make sure to remove any identifying information before submission. If this is not the case, then your paper will be considered for the ISPRS Archives **
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="content" id="content-5">
         <h2>Committees</h2>
@@ -405,6 +610,21 @@
         </center>
     </div>
     <div class="content" id="content-6">
+        <h2>Sponsors</h2>
+        <!-- Three divs with different background colors -->
+        <div class="platinum" style="width: 100%; padding: 20px;">
+            <h3>Platinum Sponsors</h3>
+        </div>
+        <div class="gold" style="width: 100%; padding: 20px;">
+            <h3>Gold Sponsors</h3>
+        </div>
+        <div class="silver" style="width: 100%; padding: 20px;">
+            <h3>Silver Sponsors</h3>
+        </div>
+        <h2>More about sponsorship</h2>
+        <p>For further information please contact Prof. Dimos N. Pantazis <a href="mailto:dnpantazis@uniwa.gr">dnpantazis@uniwa.gr</a></p>
+    </div>
+    <div class="content" id="content-7">
         <h1>Ag. Spyridonos Str., Egaleo</h1>
         Postal Code 12243, Athens<br>
         <p>Email:<a href="mailto:dnpantazis@uniwa.gr">dnpantazis@uniwa.gr</a></p>
