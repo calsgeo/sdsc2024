@@ -138,7 +138,8 @@
             padding: 10px;
         }
         th {
-            background-color: #ddd;
+            background-color: #1a3956;
+            color: white;
             text-align: center;
         }
         td {
@@ -172,6 +173,12 @@
         }
         .silver {
             background-color: silver;
+        }
+        .bronze {
+            background-color: #CD7F32;
+        }
+        .map-container {
+            text-align: center;
         }
     </style>
 </head>
@@ -257,35 +264,73 @@
         </div>
         <div class="bordered-div">
             <center><h3>Conference registration fees</h3></center>
-            <div>
+            <!-- <div>
                 <center><strong>Early bird registration:</strong><br>Until: April 30<sup>th</sup> 2024</center>
                 <center>500€</center>
             </div>
             <div>
                 <center>From April 15<sup>th</sup> 2024</center>
                 <center>600€</center>
-            </div>
-            <!-- <div class="two-column-text">
-                <div align="right">
-                    Academic:<br>
-                    Non-Academic:<br>
-                    Student:<br>
-                    Online:<br>
-                    Student online:<br>
-                    One day:<br>
-                    Full day workshop:<br>
-                </div>
-                <div align="left">
-                    €<br>
-                    €<br>
-                    €<br>
-                    €<br>
-                    €<br>
-                    €<br>
-                    €<br>
-                </div>
             </div> -->
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Registration includes</th>
+                        <th>Price</th>
+                      </tr>
+                    <tr>
+                        <td>EARLY BIRD REGISTRATION:<br>UNTIL APRIL 30<sup>th</sup> 2024<br></td>
+                        <td>
+                            <ul>
+                            <li>Access to workshop</li>
+                            <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, lunch and afternoon tea</li>
+                            <li>Welcome reception drinks, 5<sup>th</sup> June 2024</li>
+                            <li>Gala dinner, 6<sup>th</sup> June 2024</li>
+                            </ul>
+                        </td>
+                        <td>€500</td>
+                    </tr>
+                    <tr>
+                        <td>REGISTRATION:<br>FROM MAY 1<sup>st</sup> 2024<br></td>
+                        <td>
+                            <ul>
+                            <li>Access to workshop</li>
+                            <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, lunch and afternoon tea</li>
+                            <li>Welcome reception drinks, 5<sup>th</sup> June 2024</li>
+                            <li>Gala dinner, 6<sup>th</sup> June 2024</li>
+                            </ul>
+                        </td>
+                        <td>€600</td>
+                    </tr>
+                    <tr>
+                        <td>PARTICIPANTS WITHOUT PAPERS</td>
+                        <td>
+                            <ul>
+                            <li>Access to workshop</li>
+                            <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, lunch and afternoon tea</li>
+                            <li>Welcome reception drinks, 5<sup>th</sup> June 2024</li>
+                            <li>Gala dinner, 6<sup>th</sup> June 2024</li>
+                            </ul>
+                        </td>
+                        <td>€400</td>
+                    </tr>
+                    <tr>
+                        <td>ACCOMPANIED PERSONS</td>
+                        <td>
+                            <ul>
+                            <li>Catering for morning tea, lunch and afternoon tea</li>
+                            <li>Welcome reception drinks, 5<sup>th</sup> June 2024</li>
+                            <li>Gala dinner, 6<sup>th</sup> June 2024</li>
+                            <li>Registration <strong>does not</strong> include proceedings and workshops</li>
+                            </ul>
+                        </td>
+                        <td>€400</td>
+                    </tr>
+                </table>
+            </div>
         </div>
+        <!--
         <div class="collapsible-section" id="collapsible-Inscription">
             <button class="collapsible-button" onclick="toggleCollapsible('collapsible-Inscription')">Inscription</button>
             <div class="collapsible-content" id="collapsible-content">
@@ -296,7 +341,7 @@
                     <li>Welcome reception drinks, 5th June 2024</li>
                     <li>Gala dinner, 6th June 2024</li>
                 </ul>
-                <!-- <b>Student registration includes:</b><br>
+                <b>Student registration includes:</b><br>
                 <ul>
                     <li>3 day conference proceedings including keynotes, parallel sessions and catering for morning tea, afternoon tea and lunch</li>
                     <li>Catering for morning tea, afternoon tea and lunch</li>
@@ -306,10 +351,11 @@
                     <li>Live access to keynotes</li>
                     <li>Access to presentations and parallel sessions</li>
                     <li>Access to conference program</li>
-                </ul>             -->
+                </ul>
             </div>
 
         </div>
+        -->
         
         <center><h2>Dear colleagues, Ladies and Gentlemen,</h2></center>
         <div class="square">
@@ -329,20 +375,69 @@
             <center>Andreas Tsatsaris, PhD</center>
             <center>Professor</center>
         </h3>
+        <div class="square">
+            <h3>Location</h3>
+            The conference will be held at
+            <div>
+                <center>
+                    University of West Attica <br>
+                    ANCIENT OLIVE GROVE CAMPUS <br>
+                    250 Thivon & P. Ralli Str, Egaleo <br>
+                    Postal Code 12241, Athens
+                </center>
+            </div>
+            <br>
+            <div class="map-container">
+            <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=23.669,37.9768,23.676,37.9801237&amp;layer=mapnik&amp;marker=37.9787936,23.6735246"
+            ></iframe>
+            <br>
+            <button class="btn" onclick="window.location.href='https://www.google.com/maps/place/University+of+West+Attica+-+Campus+2/@37.978757,23.673642,16z/data=!4m6!3m5!1s0x14a1bc9d304b0d59:0x4d6cc1b5d5297934!8m2!3d37.9787573!4d23.6736415!16s%2Fm%2F0gh5zwn?hl=en&entry=ttu';">
+                <i class="fa fa-map"></i> Venue Map
+            </button>
+            </div>
+        </div>
+        <br>
+        <br>
         <center><img src="images/SKETCH_footer_skyline-1.png" alt="Skyline at bottom" style="width: 100%;"></center>
     </div>
     <div class="content" id="content-2">
         <h1>Keynotes</h1>
-        <center>
-            <img src="images/under-construction.jpg" alt="Under construction" style="max-width: 100%;">
-        </center>
-        <h2>Speaker name</h2>
+        <div class="tobeupdated">
+            <h2>*To be updated</h2>
+        </div>
+        <h2>Beniamino Murgante</h2>
+        <div class="square">
+            <div>
+                <img src="images/BeniaminoMurgante.jpeg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 20%">
+            </div>
+            <p>Beniamino Murgante is a Professor of spatial planning at the School of Engineering of the University of Basilicata. 
+                Quality indicators and publications impact: <br>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57208121135">Scopus:</a> H-Index 32, 2,605 citations, 251 Papers indexed <br>
+                <a href="https://scholar.google.com/citations?user=YsqyJBcAAAAJ&hl=en&oi=ao">Google Scholar</a>: H-Index 38, 4648 citations, 424 Papers indexed <br>
+                <a href="https://www.researchgate.net/profile/Beniamino-Murgante/scores">ResearchGate</a>: H-Index 35 Research Interest Score 2,439 Citations 3,568<br>
+                Director of Laboratory of Urban and Territorial Systems at the University of Basilicata.<br>
+                He took his Ph.D. in “Sciences and Methods for European Cities and Territory” at the Department of Civil Engineering of the University of Pisa, and he carried out other research in Lyon at the Laboratory for Information System Engineering directed by Robert Laurini.<br>
+                Coordinator of undergraduate and postgraduate Civil and Environmental Engineering curriculum at the University of Basilicata.<br>
+                Coordinator of Smart Mobility and Urban Services in Smart Basilicata post-graduate program.<br>
+                Member of the Editorial Board of many international journals, scientific committees of a lot of national and international conferences, and the scientific council of some national and international organizations. <br>
+                Editor of “Building Sustainable Cities” section in “Sustainable Communities” Taylor & Francis.<br>
+                Co-general Chair of the International Conference on Computational Science and Its Applications (ICCSA).
+                </p>
+        </div>
+        <!-- <h2>Speaker name</h2>
         <div class="square">
             <div>
                 <img src="images/under-construction.jpg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 50%">
             </div>
             <p>Metus facilisis fames fusce odio dolor praesent facilisis tempor iaculis velit dictumst? Viverra ornare velit mauris facilisi congue. Cras viverra habitasse ipsum fames eros lectus amet suscipit suspendisse. Cubilia per, neque ullamcorper cum platea venenatis libero ac cubilia aenean. Laoreet morbi sit placerat at aenean metus viverra cubilia. Cubilia cras vitae felis fringilla luctus ut. Ultrices placerat urna enim ornare nunc. Dignissim neque non nisl fermentum dapibus ornare ac iaculis ullamcorper penatibus felis. Nascetur id mattis iaculis.</p>
-        </div>
+        </div> -->
         
     </div>
     <div class="content" id="content-3">
@@ -350,73 +445,77 @@
         <div class="tobeupdated">
             <h2>*Schedule subject to change</h2>
         </div>
-        <h2>4<sup>th</sup> June 2024</h2>
+        <h2>Tuesday 4<sup>th</sup> June 2024</h2>
         <div class="bordered-div">
-            <div class="two-column-text">
-                <div align="left">
-                    Registration<br>
-                    <h3>PhD Candidate and Research student Symposium</h3>
+            <div class="two-column-container">
+                <div class="left-column">
+                    <center><h3>Workshops</h3></center>
+                    <ul>
+                        <li>Proximity Planning Modelling: Innovations, Trends, and Future Challenges in the "15-Minute City" Model
+                            <ul>
+                                <li>Beniamino Murgante (University of Basilicata, School of Engineering, Potenza, Italy)</li>
+                                <li>Chiara Garau (University of Cagliari, DICAAR, Cagliari, Italy)</li>
+                            </ul>
+                            
+                        </li>
+                    </ul>
                 </div>
-                <div align="left">
-                    09:00am - 09:30am<br>
+                <div class="right-column">
+                    <center><h3>15:00 - 20:00</h3></center>
                 </div>
             </div>
         </div>
-        <h2>5<sup>th</sup> June 2024</h2>
+        <h2>Wednesday 5<sup>th</sup> June 2024</h2>
         <div class="bordered-div">
-            <div class="two-column-text">
-                <div align="left">
+            <div class="two-column-container">
+                <div class="left-column">
                     Registration<br>
                     Opening ceremony<br>
-                    <h3>Workshops / 1<sup>st</sup> day of the symposium</h3>
+                    1<sup>st</sup> day of the symposium
                 </div>
-                <div align="left">
-                    09:00am - 09:30am<br>
-                    09:30am - 10:00am<br>
-                    <h3>To be announced</h3>
-                </div>
-            </div>
-        </div>
-        <h2>6<sup>th</sup> June 2024</h2>
-        <div class="bordered-div">
-            <div class="two-column-text">
-                <div align="left">
-                    Registration<br>
-                    <h3>2<sup>nd</sup> day of the symposium</h3>
-                    <h3>Gala</h3>
-                </div>
-                <div align="left">
-                    09:00am - 09:30am<br>
-                    <h3>To be announced</h3>
-                    <h3>To be announced</h3>
+                <div class="right-column">
+                    09:00 - 10:00<br>
+                    10:30 - 10:30<br>
+                    10:30 - 17:00
                 </div>
             </div>
         </div>
-        <h2>7<sup>th</sup> June 2024</h2>
+        <h2>Thursday 6<sup>th</sup> June 2024</h2>
         <div class="bordered-div">
-            <div class="two-column-text">
-                <div align="left">
+            <div class="two-column-container">
+                <div class="left-column">
                     Registration<br>
-                    <h3>3<sup>rd</sup> day of the symposium</h3>
+                    2<sup>nd</sup> day of the symposium<br>
+                    Gala
                 </div>
-                <div align="left">
-                    09:00am - 09:30am<br>
-                    <h3>To be announced</h3>
+                <div class="right-column">
+                    09:00 - 10:00<br>
+                    10:00 - 17:00<br>
+                    21:00 - 00:30
+                </div>
+            </div>
+        </div>
+        <h2>Friday 7<sup>th</sup> June 2024</h2>
+        <div class="bordered-div">
+            <div class="two-column-container">
+                <div class="left-column">
+                    Registration<br>
+                    3<sup>rd</sup> day of the symposium<br>
+                    Closing ceremony and farewell party
+                </div>
+                <div class="right-column">
+                    09:00 - 10:00<br>
+                    10:00 - 16:00<br>
+                    16:00 - 18:00
                 </div>
             </div>
         </div>
         <h2>8<sup>th</sup> June 2024</h2>
         <div class="bordered-div">
-            <div class="two-column-text">
-                <div align="left">
-                    <h3>Smart excursion in smart places</h3>
-                </div>
-                <div align="left">
-                    <h3>To be announced</h3>
-                </div>
-            </div>
+            <br>
+            Smart excursion in smart places - to be announced (with additional cost)
+            <p></p>
         </div>
-        
     </div>
     <div class="content" id="content-4">
         <h1>Call for papers</h1>
@@ -593,7 +692,7 @@
                 </ul>
         
                 <h2>How to submit</h2>
-                Papers are submitted via Conftool. <br>
+                Papers are submitted via Easychair.<br>
                 <br>
                 <button class="btn" onclick="window.location.href='https://easychair.org/account/signin?l=f4YBRsfYXAJbPNwUWGsWnU';">
                     <i class="fa fa-save"></i> Access Easychair here
@@ -625,12 +724,279 @@
     </div>
     <div class="content" id="content-5">
         <h2>Committees</h2>
-        <center>
+        <p></p>
+        <h3>General Co-Chairs</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Affiliation</th>
+                  </tr>
+                <tr>
+                    <td><strong>Dimos</strong></td>
+                    <td>Pantazis</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Ioannis</strong></td>
+                    <td>Voyiatzis</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Volker</strong></td>
+                    <td>Coors</td>
+                    <td>HFT Stuttgart</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Program Committee Co-Chairs</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Affiliation</th>
+                  </tr>
+                <tr>
+                    <td><strong>Nikitas</strong></td>
+                    <td>Karanikolas</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Claire</strong></td>
+                    <td>Ellul</td>
+                    <td>University College London</td>
+                </tr>
+                <tr>
+                    <td><strong>Michael</strong></td>
+                    <td>Vassilakopoulos</td>
+                    <td>University of Thessaly</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Program Committee Members</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Affiliation</th>
+                  </tr>
+                <tr>
+                    <td><strong>Alias</strong></td>
+                    <td>Abdul-Rahman</td>
+                    <td>Universiti Teknologi Malaysia</td>
+                </tr>
+                <tr>
+                    <td><strong>Giorgio</strong></td>
+                    <td>Agugiaro</td>
+                    <td>Delft University of Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>Theodoros</strong></td>
+                    <td>Anagnostopoulos</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Ken</strong></td>
+                    <td>Arroyo Ohori</td>
+                    <td>Delft University of Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>Filip</strong></td>
+                    <td>Biljecki</td>
+                    <td>National University of Singapore</td>
+                </tr>
+                <tr>
+                    <td><strong>Lars</strong></td>
+                    <td>Bodum</td>
+                    <td>Aalborg University</td>
+                </tr>
+                <tr>
+                    <td><strong>Pawel</strong></td>
+                    <td>Boguslawski</td>
+                    <td>Wroclaw University of Environmental and Life Sciences</td>
+                </tr>
+                <tr>
+                    <td><strong>Matteo</strong></td>
+                    <td>Caglioni</td>
+                    <td>UMR 7300 ESPACE - Université Nice Sophia Antipolis</td>
+                </tr>
+                <tr>
+                    <td><strong>Ofelia</strong></td>
+                    <td>Cervantes</td>
+                    <td>Depto. Computación, Electrónica y Mecatrónica</td>
+                </tr>
+                <tr>
+                    <td><strong>Eliseo</strong></td>
+                    <td>Clementini</td>
+                    <td>University of L'Aquila</td>
+                </tr>
+                <tr>
+                    <td><strong>Youness</strong></td>
+                    <td>Dehbi</td>
+                    <td>HafenCity University Hamburg</td>
+                </tr>
+                <tr>
+                    <td><strong>Abdoulaye</strong></td>
+                    <td>Abou Diakité</td>
+                    <td>Delft University of Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>Gilles</strong></td>
+                    <td>Gesquiere</td>
+                    <td>LIRIS</td>
+                </tr>
+                <tr>
+                    <td><strong>Tarun</strong></td>
+                    <td>Ghawana</td>
+                    <td>Integrated Spatial Analytics Consultants</td>
+                </tr>
+                <tr>
+                    <td><strong>Stephen</strong></td>
+                    <td>Hirtle</td>
+                    <td>University of Pittsburgh</td>
+                </tr>
+                <tr>
+                    <td><strong>Thomas</strong></td>
+                    <td>Kolbe</td>
+                    <td>Technical University of Munich</td>
+                </tr>
+                <tr>
+                    <td><strong>Robert</strong></td>
+                    <td>Laurini</td>
+                    <td>INSA Lyon</td>
+                </tr>
+                <tr>
+                    <td><strong>Camilo</strong></td>
+                    <td>León Sánchez</td>
+                    <td>Delft University of Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>Christina</strong></td>
+                    <td>Mickrenska-Cherneva</td>
+                    <td>UACEG</td>
+                </tr>
+                <tr>
+                    <td><strong>Robert</strong></td>
+                    <td>Olszewski</td>
+                    <td>Warsaw University of Technology</td>
+                </tr>
+                <tr>
+                    <td><strong>Alenka</strong></td>
+                    <td>Poplin</td>
+                    <td>Iowa State University</td>
+                </tr>
+                <tr>
+                    <td><strong>Ivana</strong></td>
+                    <td>Racetin</td>
+                    <td>FGAG</td>
+                </tr>
+                <tr>
+                    <td><strong>Massimo</strong></td>
+                    <td>Rumor</td>
+                    <td>University of Padova</td>
+                </tr>
+                <tr>
+                    <td><strong>Genoveva</strong></td>
+                    <td>Vargas Solar</td>
+                    <td>CNRS-LIG-LAFMIA</td>
+                </tr>
+                <tr>
+                    <td><strong>Dionysia-Georgia</strong></td>
+                    <td>Perperidou</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Panagiotis</strong></td>
+                    <td>Papantoniou</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Moussas</strong></td>
+                    <td>Vassilios</td>
+                    <td>University of West Attica</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Local Organizing Committee</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Affiliation</th>
+                </tr>
+                <tr>
+                    <td><strong>Dionysia-Georgia</strong></td>
+                    <td>Perperidou</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Panagiotis</strong></td>
+                    <td>Papantoniou</td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td><strong>Moussas</strong></td>
+                    <td>Vassilios</td>
+                    <td>University of West Attica</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Anna Christina</strong></td>
+                    <td>Daverona</td>
+                    <td>University of West Attica</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Board of UDMS</h3>
+        <div class="table-container">
+            <table>
+                <th>Name</th>
+                <tr>
+                    <ul>
+                        <li>
+                            <a href="mailto:rumor@dei.unipd.it">Massimo Rumour</a>, President<br>
+                            Padua, Italy
+                        </li>
+                        <li>
+                            <a href="mailto:volker.coors@hft-stuttgart.de">Volker Coors</a>, Vice President<br>
+                            Stuttgart, Germany
+                        </li>
+                        <li>
+                            <a href="mailto:s.zlatanova@unsw.edu.au">Sisi Zlatanova</a>, Treasurer<br>
+                            Sydney, Australia
+                        </li>
+                        <li>
+                            <a href="mailto:c.ellul@ucl.ac.uk">Claire Ellul</a>,<br>
+                            London, UK
+                        </li>
+                        <li>
+                            <a href="mailto:g.agugiaro@tudelft.nl">Giorgio Agugiaro</a>,<br>
+                            Delft, The Netherlands
+                        </li>
+                        <li>
+                            <a href="mailto:dnpantazis@uniwa.gr">Dimos N. Pantazis</a>,<br>
+                            Athens, Greece
+                        </li>
+                    </ul>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- <center>
             <img src="images/under-construction.jpg" alt="Under construction" style="max-width: 100%;">
-        </center>
+        </center> -->
     </div>
     <div class="content" id="content-6">
         <h2>Sponsors</h2>
+        <h3>Find out more about our Sponsorship Packages</h3>
+        <button class="btn" onclick="window.location.href='files/SDSC2024_SponsorshipProposal.pdf';">
+            <i class="fa fa-book"></i> Download Sponsorship Packages
+        </button>
+        <p></p>
         <!-- Three divs with different background colors -->
         <div class="platinum" style="width: 100%; padding: 20px;">
             <h3>Platinum Sponsors</h3>
@@ -641,8 +1007,10 @@
         <div class="silver" style="width: 100%; padding: 20px;">
             <h3>Silver Sponsors</h3>
         </div>
-        <h2>More about sponsorship</h2>
-        <p>For further information please contact Prof. Dimos N. Pantazis <a href="mailto:dnpantazis@uniwa.gr">dnpantazis@uniwa.gr</a></p>
+        <div class="bronze" style="width: 100%; padding: 20px;">
+            <h3>Bronze Sponsors</h3>
+        </div>
+        
     </div>
     <div class="content" id="content-7">
         <h1>Ag. Spyridonos Str., Egaleo</h1>
@@ -660,6 +1028,12 @@
     </div>
 
     <script>
+        // Set the first tab (Tab 1) to be open by default on page load
+        openTab(0);
+        // Open the collapsible content by default
+        toggleCollapsible('collapsible-Themes');
+        toggleCollapsible('collapsible-udms');
+
         function openTab(tabNumber) {
             const contentElements = document.querySelectorAll('.content');
             const tabElements = document.querySelectorAll('.tab');
@@ -684,11 +1058,6 @@
             }
         }
 
-        // Set the first tab (Tab 1) to be open by default on page load
-        openTab(0);
-        // Open the collapsible content by default
-        toggleCollapsible('collapsible-Themes');
-        toggleCollapsible('collapsible-Inscription');
     </script>
 </body>
 </html>
