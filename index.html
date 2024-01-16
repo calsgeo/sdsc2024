@@ -127,17 +127,37 @@
             background-color: #f0f0f0;
             padding: 10px;
             margin: 10px;
+            width: 95%;
         }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th, td {
+            border: 1px solid #080808;
             padding: 10px;
-            text-align: left;
         }
         th {
-            background-color: #ddd; /* Light gray background for cell titles */
+            background-color: #ddd;
+            text-align: center;
+        }
+        td {
+            text-align: left;
+        }
+        .two-column-container {
+            display: flex;
+            width: 100%;
+        }
+        .left-column {
+            flex: 1;
+            width: 300px; /* Fixed width for the left column */
+            padding: 20px;
+            text-align: left; /* Left-align text in the left column */
+        }
+        .right-column {
+            flex: 1;
+            padding: 20px;
+            text-align: left; /* Left-align text in the right column */
         }
         ul {
             list-style-type: disc;
@@ -194,8 +214,8 @@
         <div class="collapsible-section" id="collapsible-Themes">
             <button class="collapsible-button" onclick="toggleCollapsible('collapsible-Themes')">View list of themes</button>
             <div class="collapsible-content" id="collapsible-content">
-                <div class="two-column-text">
-                    <div>
+                <div class="two-column-container">
+                    <div class="left-column">
                         <ul>
                             <li>GIS, urban informatics, and smart cities</li>
                             <li>Sensing technologies, laser scanning and smart cities</li>
@@ -212,8 +232,9 @@
                             <li>Application of Artificial Intelligence (AI) and machine learning in smart cities</li>
                             <li>Drones for monitoring/inspecting cities and construction sites</li>
                         </ul>
+
                     </div>
-                    <div>
+                    <div class="right-column">
                         <ul>
                             <li>Smart homes</li>
                             <li>Realtime/web-based/interactive data visualization</li>
@@ -237,11 +258,11 @@
         <div class="bordered-div">
             <center><h3>Conference registration fees</h3></center>
             <div>
-                <center><strong>Early bird registration:</strong> until April 15th 2024</center>
+                <center><strong>Early bird registration:</strong><br>Until: April 30<sup>th</sup> 2024</center>
                 <center>500€</center>
             </div>
             <div>
-                <center>From April 15th 2024</center>
+                <center>From April 15<sup>th</sup> 2024</center>
                 <center>600€</center>
             </div>
             <!-- <div class="two-column-text">
@@ -541,43 +562,38 @@
                 </tr>
             </table>
         </div>
-        <div class="two-column-text">
-            <div align="left">
-                <h2>Key Deadlines</h2>
+        <div class="two-column-container">
+            <div class="left-column">
                 <h3>Publication Pathway 1 – Abstract paper submission</h3>
                 <h4>6-8 pages</h4>
-                Extended abstract (1000w) due: <u>12th January 2024</u><br>
-                Author notification: <u>9th February 2024</u><br>
-                Optional final submission: <u>12th April 2024</u><br>
-                <ul>
-                    <li>6-8 pages</li>
-                    <li>Submission for ISPRS archives</li>
-                    <li>Will not be re-reviewed</li>
-                </ul>
-
+                Extended abstract (1000w) due: <u>25<sup>th</sup> February 2024</u><br>
+                Author notification: <u>20<sup>th</sup> March 2024</u><br>
+                Optional final submission: <u>12<sup>th</sup> April 2024</u><br>
+                <br>
+                Pathway – short paper submission<br>
+                *paper to be accepted on abstract review<br>
+                *to be published in ISPRS archives<br>
                 <h3>Publication pathway 2 – Full paper submission</h3>
                 <h4>6-8 pages</h4>
-                Full paper: <u>26th January 2024</u><br>
-                Author notification: <u>1st March 2024</u><br>
-                Final submission: <u>12th April 2024</u><br>
-                <ul>
-                    <li>6-8 pages</li>
-                    <li>Paper will be blind peer reviewed for ISPRS Annals</li>
-                    <li>No abstract submission required</li>
-                </ul>
+                Full paper due: <u>1<sup>st</sup> March 2024</u><br>
+                Author notification: <u>31<sup>st</sup> March 2024</u><br>
+                Full paper due: <u>15<sup>th</sup> April 2024</u><br>
+                <br>
+                *paper to be accepted on full paper review<br>
+                *no abstract submission required in advance<br>
+                *to be published in ISPRS annals<br>
             </div>
-            <div align="left">
-                <h2>Adwards</h2>
+            <div class="right-column">
+                <h2>Awards</h2>
                 This joining event will recognise the high quality presentations and papers by sponsoring the following awards:
                 <ul>
-                    <li>Best paper award</li>
-                    <li>Best oral presentation</li>
-                    <li>Best young researcher award</li>
+                    <li>3 Best papers awards</li>
+                    <li>3 Best oral presentation</li>
                     <li>Several industry supported awards</li>
                 </ul>
-                
+        
                 <h2>How to submit</h2>
-                Papers are submitted via Easychair. <br>
+                Papers are submitted via Conftool. <br>
                 <br>
                 <button class="btn" onclick="window.location.href='https://easychair.org/account/signin?l=f4YBRsfYXAJbPNwUWGsWnU';">
                     <i class="fa fa-save"></i> Access Easychair here
