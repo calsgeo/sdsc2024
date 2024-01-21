@@ -1100,14 +1100,6 @@
         toggleCollapsible('collapsible-Themes');
         toggleCollapsible('collapsible-udms');
 
-        function toggleZoom(image) {
-            if (image.classList.contains("zoomed")) {
-                image.classList.remove("zoomed");
-            } else {
-                image.classList.add("zoomed");
-            }
-        }
-
         function openTab(tabNumber) {
             const contentElements = document.querySelectorAll('.content');
             const tabElements = document.querySelectorAll('.tab');
@@ -1119,6 +1111,13 @@
 
             contentElements[tabNumber].style.display = 'block';
             tabElements[tabNumber].style.backgroundColor = '#fff';
+        }
+        function toggleZoom(image) {
+            if (image.classList.contains("zoomed")) {
+                image.classList.remove("zoomed");
+            } else {
+                image.classList.add("zoomed");
+            }
         }
 
         function toggleCollapsible(collapsibleId) {
