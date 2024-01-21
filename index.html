@@ -180,6 +180,11 @@
         .map-container {
             text-align: center;
         }
+        .zoomed-image {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -198,6 +203,8 @@
         <div class="tab" onclick="openTab(6)">Contact us</div>
     </div>
     <div class="content" id="content-1">
+        <h1>8th International Conference on</h1>
+        <h1>Smart Data and Smart Cities (SDSC2024)</h1>
         <div class="icon-section">
             <div class="icon">
                 <img src="images/calendar.png" alt="Icon 1">
@@ -212,7 +219,7 @@
                 <div class="icon-text">University of West Attica Athens Greece</div>
             </div>
         </div>
-        <h1>Overview</h1>
+        <h2>Overview</h2>
         <div><p>Data and data science play key role in informed decision-making for various businesses. 3D location data and 3D data analysis add more advantages for identification of problems, patterns and trends by location and time to make smarter decisions for our cities. Smart cities get benefits from data, data science, location data and analytics to provide accurate information for better decision making at local and regional scale. Sensing technologies and real time data collectors are also great tools for collecting different dimensions of data. In a smart cities era, all these data and information require appropriate collaborative and communication technologies for better management and sharing of data and information.</p>
         <p>The Smart Data and Smart Cities (SDSC) Conference is an annual international conference that brings together international experts in city analytics, GIS, digital twins, smart cities and data science from leading research institutes to discuss advances in methods and applications. It provides a forum to discuss the use data and technology to plan and shape our future cities. SDSC is the annual conference of the Urban Data Management Society, a society over 40 years old.</p>
         <p> <b>This year the 8th annual SDSC conference will be held in Athens, Greece 04-08 June, 2024.</b> This is the first time SDSC conference has come to Greece. </p>
@@ -402,8 +409,8 @@
                 <p></p>
             </div>
             <div class="two-column-container">
-                <img src="images/CampusEntrance.png" alt="CampusEntrance" style="width: 50%; float: left;">
-                <img src="images/CampusVenue.png" alt="CampusVenue" style="width: 50%; float: left;">
+                <img src="images/CampusEntrance.png" alt="CampusEntrance" style="width: 50%; float: left;" class="zoomed-image" onclick="toggleZoom(this);">
+                <img src="images/CampusVenue.png" alt="CampusVenue" style="width: 50%; float: left;" class="zoomed-image" onclick="toggleZoom(this);">
             </div>
             <div>
                 <p></p>
@@ -527,18 +534,23 @@
                 Author notification: <u>20<sup>th</sup> March 2024</u><br>
                 Optional final submission: <u>12<sup>th</sup> April 2024</u><br>
                 <br>
-                Pathway – short paper submission<br>
-                *paper to be accepted on abstract review<br>
-                *to be published in ISPRS archives<br>
+                Consider:<br>
+                <ul>
+                    <li>Paper to be accepted on abstract review</li>
+                    <li>To be published in ISPRS archives</li>
+                </ul>
+                
                 <h3>Publication pathway 2 – Full paper submission</h3>
                 <h4>6-8 pages</h4>
                 Full paper due: <u>1<sup>st</sup> March 2024</u><br>
                 Author notification: <u>31<sup>st</sup> March 2024</u><br>
                 Full paper due: <u>15<sup>th</sup> April 2024</u><br>
-                <br>
-                *paper to be accepted on full paper review<br>
-                *no abstract submission required in advance<br>
-                *to be published in ISPRS annals<br>
+                Consider:<br>
+                <ul>
+                    <li>Paper to be accepted on full paper review</li>
+                    <li>No abstract submission required in advance</li>
+                    <li>To be published in ISPRS annals</li>
+                </ul>
             </div>
             <div class="right-column">
                 <h2>Awards</h2>
@@ -725,7 +737,7 @@
     </div>
     <div class="content" id="content-5">
         <h2>Committees</h2>
-        <p></p>
+        <p>/p>
         <h3>General Co-Chairs</h3>
         <div class="table-container">
             <table>
@@ -735,18 +747,18 @@
                     <th>Affiliation</th>
                   </tr>
                 <tr>
-                    <td><strong>Dimos</strong></td>
-                    <td>Pantazis</td>
+                    <td>Dimos</td>
+                    <td><strong>Pantazis</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Ioannis</strong></td>
-                    <td>Voyiatzis</td>
+                    <td>Ioannis</td>
+                    <td><strong>Voyiatzis</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Volker</strong></td>
-                    <td>Coors</td>
+                    <td>Volker</td>
+                    <td><strong>Coors</strong></td>
                     <td>HFT Stuttgart</td>
                 </tr>
             </table>
@@ -760,18 +772,18 @@
                     <th>Affiliation</th>
                   </tr>
                 <tr>
-                    <td><strong>Nikitas</strong></td>
-                    <td>Karanikolas</td>
+                    <td>Nikitas</td>
+                    <td><strong>Karanikolas</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Claire</strong></td>
-                    <td>Ellul</td>
+                    <td>Claire</td>
+                    <td><strong>Ellul</strong></td>
                     <td>University College London</td>
                 </tr>
                 <tr>
-                    <td><strong>Michael</strong></td>
-                    <td>Vassilakopoulos</td>
+                    <td>Michael</td>
+                    <td><strong>Vassilakopoulos</strong></td>
                     <td>University of Thessaly</td>
                 </tr>
             </table>
@@ -785,139 +797,194 @@
                     <th>Affiliation</th>
                   </tr>
                 <tr>
-                    <td><strong>Alias</strong></td>
-                    <td>Abdul-Rahman</td>
+                    <td>Alias</td>
+                    <td><strong>Abdul-Rahman</strong></td>
                     <td>Universiti Teknologi Malaysia</td>
                 </tr>
                 <tr>
-                    <td><strong>Giorgio</strong></td>
-                    <td>Agugiaro</td>
+                    <td>Giorgio</td>
+                    <td><strong>Agugiaro</strong></td>
                     <td>Delft University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Theodoros</strong></td>
-                    <td>Anagnostopoulos</td>
+                    <td>Theodoros</td>
+                    <td><strong>Anagnostopoulos</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Ken</strong></td>
-                    <td>Arroyo Ohori</td>
+                    <td>Ken</td>
+                    <td><strong>Arroyo Ohori</strong></td>
                     <td>Delft University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Filip</strong></td>
-                    <td>Biljecki</td>
+                    <td>Filip</td>
+                    <td><strong>Biljecki</strong></td>
                     <td>National University of Singapore</td>
                 </tr>
                 <tr>
-                    <td><strong>Lars</strong></td>
-                    <td>Bodum</td>
+                    <td>Lars</td>
+                    <td><strong>Bodum</strong></td>
                     <td>Aalborg University</td>
                 </tr>
                 <tr>
-                    <td><strong>Pawel</strong></td>
-                    <td>Boguslawski</td>
+                    <td>Pawel</td>
+                    <td><strong>Boguslawski</strong></td>
                     <td>Wroclaw University of Environmental and Life Sciences</td>
                 </tr>
                 <tr>
-                    <td><strong>Matteo</strong></td>
-                    <td>Caglioni</td>
+                    <td>Matteo</td>
+                    <td><strong>Caglioni</strong></td>
                     <td>UMR 7300 ESPACE - Université Nice Sophia Antipolis</td>
                 </tr>
                 <tr>
-                    <td><strong>Ofelia</strong></td>
-                    <td>Cervantes</td>
+                    <td>Ofelia</td>
+                    <td><strong>Cervantes</strong></td>
                     <td>Depto. Computación, Electrónica y Mecatrónica</td>
                 </tr>
                 <tr>
-                    <td><strong>Eliseo</strong></td>
-                    <td>Clementini</td>
+                    <td>Eliseo</td>
+                    <td><strong>Clementini</strong></td>
                     <td>University of L'Aquila</td>
                 </tr>
                 <tr>
-                    <td><strong>Youness</strong></td>
-                    <td>Dehbi</td>
+                    <td>Youness</td>
+                    <td><strong>Dehbi</strong></td>
                     <td>HafenCity University Hamburg</td>
                 </tr>
                 <tr>
-                    <td><strong>Abdoulaye</strong></td>
-                    <td>Abou Diakité</td>
+                    <td>Abdoulaye Abou</td>
+                    <td><strong>Diakité</strong></td>
                     <td>Delft University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Gilles</strong></td>
-                    <td>Gesquiere</td>
+                    <td>Gilles</td>
+                    <td><strong>Gesquiere</strong></td>
                     <td>LIRIS</td>
                 </tr>
                 <tr>
-                    <td><strong>Tarun</strong></td>
-                    <td>Ghawana</td>
+                    <td>Tarun</td>
+                    <td><strong>Ghawana</strong></td>
                     <td>Integrated Spatial Analytics Consultants</td>
                 </tr>
                 <tr>
-                    <td><strong>Stephen</strong></td>
-                    <td>Hirtle</td>
+                    <td>Stephen</td>
+                    <td><strong>Hirtle</strong></td>
                     <td>University of Pittsburgh</td>
                 </tr>
                 <tr>
-                    <td><strong>Thomas</strong></td>
-                    <td>Kolbe</td>
+                    <td>Thomas</td>
+                    <td><strong>Kolbe</strong></td>
                     <td>Technical University of Munich</td>
                 </tr>
                 <tr>
-                    <td><strong>Robert</strong></td>
-                    <td>Laurini</td>
+                    <td>Robert</td>
+                    <td><strong>Laurini</strong></td>
                     <td>INSA Lyon</td>
                 </tr>
                 <tr>
-                    <td><strong>Camilo</strong></td>
-                    <td>León Sánchez</td>
+                    <td>Camilo</td>
+                    <td><strong>León Sánchez</strong></td>
                     <td>Delft University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Christina</strong></td>
-                    <td>Mickrenska-Cherneva</td>
+                    <td>Christina</td>
+                    <td><strong>Mickrenska-Cherneva</strong></td>
                     <td>UACEG</td>
                 </tr>
                 <tr>
-                    <td><strong>Robert</strong></td>
-                    <td>Olszewski</td>
+                    <td>Robert</td>
+                    <td><strong>Olszewski</strong></td>
                     <td>Warsaw University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Alenka</strong></td>
-                    <td>Poplin</td>
+                    <td>Dionysia-Georgia</td>
+                    <td><strong>Perperidou</strong></td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td>Alenka</td>
+                    <td><strong>Poplin</strong></td>
                     <td>Iowa State University</td>
                 </tr>
                 <tr>
-                    <td><strong>Ivana</strong></td>
-                    <td>Racetin</td>
+                    <td>Ivana</td>
+                    <td><strong>Racetin</strong></td>
                     <td>FGAG</td>
                 </tr>
                 <tr>
-                    <td><strong>Massimo</strong></td>
-                    <td>Rumor</td>
+                    <td>Maria</td>
+                    <td><strong>Rigkou</strong></td>
+                    <td>University of Patras</td>
+                </tr>
+                <tr>
+                    <td>Massimo</td>
+                    <td><strong>Rumor</strong></td>
                     <td>University of Padova</td>
                 </tr>
                 <tr>
-                    <td><strong>Genoveva</strong></td>
-                    <td>Vargas Solar</td>
+                    <td>Soheil</td>
+                    <td><strong>Sabri</strong></td>
+                    <td>Melbourne University</td>
+                </tr>
+                <tr>
+                    <td>Davood</td>
+                    <td><strong>Shojaei</strong></td>
+                    <td>Melbourne University</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td><strong>Sinou</strong></td>
+                    <td>University of West Attica</td>
+                </tr>
+                <tr>
+                    <td>Yongze</td>
+                    <td><strong>Song</strong></td>
+                    <td>Curtin University</td>
+                </tr>
+                <tr>
+                    <td>Antonia</td>
+                    <td><strong>Spanò</strong></td>
+                    <td>Politecnico di Torino</td>
+                </tr>
+                <tr>
+                    <td>Riza</td>
+                    <td><strong>Sunindijo</strong></td>
+                    <td>UNSW Sydney</td>
+                </tr>
+                <tr>
+                    <td>Shengjun</td>
+                    <td><strong>Tang</strong></td>
+                    <td>Shenzhen University</td>
+                </tr>
+                <tr>
+                    <td>Wei</td>
+                    <td><strong>Tu</strong></td>
+                    <td>Shenzhen University</td>
+                </tr>
+                <tr>
+                    <td>Genoveva</td>
+                    <td><strong>Vargas Solar</strong></td>
                     <td>CNRS-LIG-LAFMIA</td>
                 </tr>
                 <tr>
-                    <td><strong>Dionysia-Georgia</strong></td>
-                    <td>Perperidou</td>
-                    <td>University of West Attica</td>
+                    <td>Anh Vu</td>
+                    <td><strong>Vo</strong></td>
+                    <td>University College Dublin</td>
                 </tr>
                 <tr>
-                    <td><strong>Panagiotis</strong></td>
-                    <td>Papantoniou</td>
-                    <td>University of West Attica</td>
+                    <td>Zhiyong</td>
+                    <td><strong>Wang</strong></td>
+                    <td>South China University of Technology</td>
                 </tr>
                 <tr>
-                    <td><strong>Moussas</strong></td>
-                    <td>Vassilios</td>
-                    <td>University of West Attica</td>
+                    <td>Stephan</td>
+                    <td><strong>Winter</strong></td>
+                    <td>The University of Melbourne</td>
+                </tr>
+                <tr>
+                    <td>Jian</td>
+                    <td><strong>Zuo</strong></td>
+                    <td>The University of Adelaide</td>
                 </tr>
             </table>
         </div>
@@ -930,24 +997,24 @@
                     <th>Affiliation</th>
                 </tr>
                 <tr>
-                    <td><strong>Dionysia-Georgia</strong></td>
-                    <td>Perperidou</td>
+                    <td>Dionysia-Georgia</td>
+                    <td><strong>Perperidou</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Panagiotis</strong></td>
-                    <td>Papantoniou</td>
+                    <td>Panagiotis</td>
+                    <td><strong>Papantoniou</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 <tr>
-                    <td><strong>Moussas</strong></td>
                     <td>Vassilios</td>
+                    <td><strong>Moussas</strong></td>
                     <td>University of West Attica</td>
                 </tr>
                 
                 <tr>
-                    <td><strong>Anna Christina</strong></td>
-                    <td>Daverona</td>
+                    <td>Anna-Christina</td>
+                    <td><strong>Daverona</strong></td>
                     <td>University of West Attica</td>
                 </tr>
             </table>
@@ -1013,8 +1080,7 @@
         
     </div>
     <div class="content" id="content-7">
-        <h1>Ag. Spyridonos Str., Egaleo</h1>
-        Postal Code 12243, Athens<br>
+        <h1>University of West Attica, Egaleo Park campus</h1>
         <p>Email:<a href="mailto:dnpantazis@uniwa.gr">dnpantazis@uniwa.gr</a></p>
         <iframe
                 width="100%"
@@ -1023,16 +1089,24 @@
                 scrolling="no"
                 marginheight="0"
                 marginwidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.3008578284302!2d23.673890221378407!3d38.0030338218503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcace8cb49fb%3A0xd565e562863223b3!2sAthens+University+of+Applied+Sciences!5e0!3m2!1sen!2sgr!4v1520984304414"
-            ></iframe>
-    </div>
-
-    <script>
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6289.860504940142!2d23.673642!3d37.978757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc9d304b0d59%3A0x4d6cc1b5d5297934!2sUniversity%20of%20West%20Attica%20-%20Campus%202!5e0!3m2!1sen!2snl!4v1705836017194!5m2!1sen!2snl"></iframe>
+            </div>
+            
+            <script>
+        
         // Set the first tab (Tab 1) to be open by default on page load
         openTab(0);
         // Open the collapsible content by default
         toggleCollapsible('collapsible-Themes');
         toggleCollapsible('collapsible-udms');
+
+        function toggleZoom(image) {
+            if (image.classList.contains("zoomed")) {
+                image.classList.remove("zoomed");
+            } else {
+                image.classList.add("zoomed");
+            }
+        }
 
         function openTab(tabNumber) {
             const contentElements = document.querySelectorAll('.content');
