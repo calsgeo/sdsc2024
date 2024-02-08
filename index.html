@@ -185,6 +185,23 @@
             max-height: 100%;
             cursor: pointer;
         }
+        .section {
+            display: flex;
+            flex-direction: column; /* Set sections to stack vertically */
+            margin-bottom: 5px;
+        }
+        .section .content-container {
+            display: flex;
+            align-items: center; /* Align items horizontally */
+        }
+        .section .image-container,
+        .section .text-container {
+            flex: 1;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -427,25 +444,36 @@
         <div class="tobeupdated">
             <h2>*To be updated</h2>
         </div>
-        <h2>Beniamino Murgante</h2>
-        <div class="square">
+        <div class="section">
+            <h2>Beniamino Murgante</h2>
+            <br>
             <div>
-                <img src="images/BeniaminoMurgante.jpeg" alt="Image Alt Text" style="float:left;margin: 10px;max-width: 20%">
+                <div>
+                    <img src="images/BeniaminoMurgante.jpeg" alt="Beniamino Murgante image" style="float:left;margin: 10px;max-width: 250px">
+                </div>
+                    <p>Beniamino Murgante is a Professor of spatial planning at the School of Engineering of the University of Basilicata. 
+                        Quality indicators and publications impact: <br>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57208121135">Scopus:</a> H-Index 32, 2,605 citations, 251 Papers indexed <br>
+                        <a href="https://scholar.google.com/citations?user=YsqyJBcAAAAJ&hl=en&oi=ao">Google Scholar</a>: H-Index 38, 4648 citations, 424 Papers indexed <br>
+                        <a href="https://www.researchgate.net/profile/Beniamino-Murgante/scores">ResearchGate</a>: H-Index 35 Research Interest Score 2,439 Citations 3,568<br>
+                        Director of Laboratory of Urban and Territorial Systems at the University of Basilicata.<br>
+                        He took his Ph.D. in “Sciences and Methods for European Cities and Territory” at the Department of Civil Engineering of the University of Pisa, and he carried out other research in Lyon at the Laboratory for Information System Engineering directed by Robert Laurini.<br>
+                        Coordinator of undergraduate and postgraduate Civil and Environmental Engineering curriculum at the University of Basilicata.<br>
+                        Coordinator of Smart Mobility and Urban Services in Smart Basilicata post-graduate program.<br>
+                        Member of the Editorial Board of many international journals, scientific committees of a lot of national and international conferences, and the scientific council of some national and international organizations. <br>
+                        Editor of “Building Sustainable Cities” section in “Sustainable Communities” Taylor & Francis.<br>
+                        Co-general Chair of the International Conference on Computational Science and Its Applications (ICCSA).
+                    </p>
             </div>
-            <p>Beniamino Murgante is a Professor of spatial planning at the School of Engineering of the University of Basilicata. 
-                Quality indicators and publications impact: <br>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=57208121135">Scopus:</a> H-Index 32, 2,605 citations, 251 Papers indexed <br>
-                <a href="https://scholar.google.com/citations?user=YsqyJBcAAAAJ&hl=en&oi=ao">Google Scholar</a>: H-Index 38, 4648 citations, 424 Papers indexed <br>
-                <a href="https://www.researchgate.net/profile/Beniamino-Murgante/scores">ResearchGate</a>: H-Index 35 Research Interest Score 2,439 Citations 3,568<br>
-                Director of Laboratory of Urban and Territorial Systems at the University of Basilicata.<br>
-                He took his Ph.D. in “Sciences and Methods for European Cities and Territory” at the Department of Civil Engineering of the University of Pisa, and he carried out other research in Lyon at the Laboratory for Information System Engineering directed by Robert Laurini.<br>
-                Coordinator of undergraduate and postgraduate Civil and Environmental Engineering curriculum at the University of Basilicata.<br>
-                Coordinator of Smart Mobility and Urban Services in Smart Basilicata post-graduate program.<br>
-                Member of the Editorial Board of many international journals, scientific committees of a lot of national and international conferences, and the scientific council of some national and international organizations. <br>
-                Editor of “Building Sustainable Cities” section in “Sustainable Communities” Taylor & Francis.<br>
-                Co-general Chair of the International Conference on Computational Science and Its Applications (ICCSA).
-                </p>
         </div>
+        <!-- <div class="section">
+            <div class="image-container">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="text-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            </div>
+        </div> -->
         <h2>Robert Laurini</h2>
         <div class="square">
             <div>
@@ -464,7 +492,7 @@
         <h2>Stéphane Roche</h2>
         <div class="square">
             <div>
-                <img src="images/SR.jpg" alt="Stéphane Roche image" style="float:left;margin: 10px;max-width: 30%">
+                <img src="images/SR.jpg" alt="Stéphane Roche image" style="float:left;margin: 10px;max-width: 250px">
             </div>
             <p>Stéphane Roche, Professor of Geomatics Science<br>
 			Director of the Institute for Environment, Development and Society (Institute EDS)<br>
